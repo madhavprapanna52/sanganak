@@ -332,13 +332,42 @@
     <div class="app-container">
         <div class="background-animation"></div>
 
-        <header class="header">
-            <div class="logo">संगणक</div>
-        </header>
+<!-- Replace the header in the existing code -->
+<header class="header">
+    <img src="/home/madhavr/Pictures/Screenshots/Screenshot_20250730_144829.png" alt="संगणक Logo" class="logo">
+</header>
+
+<style>
+    .logo {
+        height: 150px; /* Adjust based on your logo size */
+        max-width: 150px; /* Prevent overflow */
+        object-fit: contain;
+        filter: drop-shadow(0 0 10px var(--shadow-light));
+        transition: transform 0.3s ease;
+    }
+
+    .logo:hover {
+        transform: scale(1.1);
+    }
+
+    @media (max-width: 768px) {
+        .logo {
+            height: 32px;
+            max-width: 120px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .logo {
+            height: 28px;
+            max-width: 100px;
+        }
+    }
+</style>
 
         <main class="main-content">
             <div class="editor-panel">
-                <div id="editor">print("Welcome to sanganak made by madhav rimal happy coding")
+                <div id="editor">print("Welcome to संगणक! 🚀")
 # Start coding in Python
 </div>
             </div>
